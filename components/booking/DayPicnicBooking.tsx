@@ -55,7 +55,7 @@ export default function DayPicnicBooking() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="block text-sm font-medium text-slate-700">Package</label>
-          <select {...register('package', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200">
+          <select {...register('package', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200">
             <option value="4hr">4 Hours</option>
             <option value="6hr">6 Hours</option>
             <option value="8hr">8 Hours</option>
@@ -63,11 +63,11 @@ export default function DayPicnicBooking() {
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Date</label>
-          <input type="date" {...register('date', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input type="date" {...register('date', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Time Slot</label>
-          <select {...register('timeSlot', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200">
+          <select {...register('timeSlot', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200">
             <option value="morning">9:00 AM – 1:00 PM</option>
             <option value="afternoon">1:00 PM – 7:00 PM</option>
             <option value="full">9:00 AM – 5:00 PM</option>
@@ -75,19 +75,19 @@ export default function DayPicnicBooking() {
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Pet Name</label>
-          <input type="text" {...register('petName', { required: true })} placeholder="e.g., Bruno" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input type="text" {...register('petName', { required: true })} placeholder="e.g., Bruno" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Owner Name</label>
-          <input type="text" {...register('ownerName', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input type="text" {...register('ownerName', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Owner Email</label>
-          <input type="email" {...register('ownerEmail', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input type="email" {...register('ownerEmail', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Owner Phone</label>
-          <input type="tel" {...register('ownerPhone', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input type="tel" {...register('ownerPhone', { required: true })} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Add-ons</label>

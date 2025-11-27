@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" className={`${poppins.variable} ${nunito.variable}`}>
-      <body className="min-h-screen bg-park-50 text-slate-900 antialiased">
+      <body className="min-h-screen bg-sand-50 text-slate-900 antialiased">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:text-black focus:px-3 focus:py-2 focus:rounded"

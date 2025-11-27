@@ -40,19 +40,19 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-4">
         <div>
           <label className="block text-sm font-medium text-slate-700">Name</label>
-          <input name="name" required type="text" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input name="name" required type="text" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Email</label>
-          <input name="email" required type="email" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input name="email" required type="email" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Phone</label>
-          <input name="phone" required type="tel" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input name="phone" required type="tel" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Service interested in</label>
-          <select name="service" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200">
+          <select name="service" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200">
             <option value="day-picnic">Day Picnic</option>
             <option value="boarding">Boarding</option>
             <option value="general">General</option>
@@ -60,11 +60,11 @@ export default function ContactForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Preferred date</label>
-          <input name="preferredDate" type="date" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <input name="preferredDate" type="date" className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">Message</label>
-          <textarea name="message" rows={4} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-park-500 focus:outline-none focus:ring-2 focus:ring-park-200" />
+          <textarea name="message" rows={4} className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 focus:border-earth-500 focus:outline-none focus:ring-2 focus:ring-earth-200" />
         </div>
         <button
           disabled={state === 'submitting'}

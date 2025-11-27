@@ -6,7 +6,7 @@ import FadeIn from '@/components/animations/FadeIn'
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-park-100 to-park-50">
+      <section className="relative overflow-hidden bg-gradient-to-b from-sand-100 to-earth-50">
         <div className="pointer-events-none absolute inset-0 opacity-10">
           <PawPrint className="absolute -left-6 top-6 h-24 w-24 animate-paw-print text-park-400" />
           <PawPrint className="absolute right-10 bottom-10 h-16 w-16 animate-paw-print text-park-300" />
@@ -23,7 +23,7 @@ export default function HomePage() {
           aria-hidden="true"
         />
         <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 py-20 sm:py-28">
-          <div className="mb-6 flex items-center gap-3 rounded-full bg-white/70 px-4 py-2 text-sm text-park-800 ring-1 ring-park-200 backdrop-blur">
+          <div className="mb-6 flex items-center gap-3 rounded-full bg-white/70 px-4 py-2 text-sm text-earth-900 ring-1 ring-earth-300 backdrop-blur">
             <Dog className="h-4 w-4" />
             Where Every Tail Wags with Joy
           </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
                 <div className="rounded-xl bg-sunshine-100 p-3 text-sunshine-600">
                   <Sun className="h-6 w-6" />
                 </div>
-                <span className="rounded-full bg-park-100 px-3 py-1 text-xs font-semibold text-park-700 ring-1 ring-park-200">
+                <span className="rounded-full bg-earth-100 px-3 py-1 text-xs font-semibold text-earth-700 ring-1 ring-earth-200">
                   From 4 hours
                 </span>
               </div>
@@ -83,7 +83,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-14">
         <div className="mb-8 flex items-center gap-3">
-          <Map className="h-6 w-6 text-park-600" />
+          <Map className="h-6 w-6 text-earth-700" />
           <h2 className="font-display text-3xl font-extrabold">Premium Amenities & Activities</h2>
         </div>
         <FadeIn>

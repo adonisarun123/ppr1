@@ -34,7 +34,7 @@ export default function AmenitiesPage() {
               </div>
               <p className="mt-2 text-slate-700">{a.desc}</p>
               <div
-                className="mt-4 h-40 w-full rounded-xl bg-cover bg-center ring-1 ring-park-100"
+                className="mt-4 h-40 w-full rounded-xl bg-cover bg-center ring-1 ring-earth-100"
                 style={{
                   backgroundImage: `url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop')`,
                 }}

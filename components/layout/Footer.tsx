@@ -3,7 +3,7 @@ import { site } from '@/lib/site-config'
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-park-100 bg-white">
+    <footer className="mt-16 border-t border-earth-200 bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <h3 className="text-sm font-semibold text-slate-800">About</h3>
@@ -39,7 +39,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-park-100 bg-park-50/60">
+      <div className="border-t border-earth-200 bg-earth-50/60">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-4 text-sm text-slate-600 sm:flex-row">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
           <div className="flex items-center gap-4">

@@ -22,7 +22,7 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-park-100 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b border-earth-200 bg-white/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <span className="rounded-lg bg-park-100 p-2 text-park-700">
@@ -57,7 +57,7 @@ export default function Header() {
         </button>
       </div>
       {open && (
-        <div className="border-t border-park-100 bg-white md:hidden">
+        <div className="border-t border-earth-200 bg-white md:hidden">
           <div className="mx-auto max-w-7xl px-4 py-3">
             <div className="grid grid-cols-2 gap-3">
               {nav.map((item) => (

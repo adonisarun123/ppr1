@@ -23,13 +23,13 @@ body {
 /* Focus */
 :focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px theme('colors.park.500');
+  box-shadow: 0 0 0 2px theme('colors.earth.500');
 }
 
 /* Custom scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: theme('colors.park.400') theme('colors.park.100');
+  scrollbar-color: theme('colors.earth.400') theme('colors.earth.100');
 }
 
 *::-webkit-scrollbar {
@@ -37,12 +37,12 @@ body {
   height: 10px;
 }
 *::-webkit-scrollbar-track {
-  background: theme('colors.park.100');
+  background: theme('colors.earth.100');
 }
 *::-webkit-scrollbar-thumb {
-  background-color: theme('colors.park.400');
+  background-color: theme('colors.earth.400');
   border-radius: 9999px;
-  border: 3px solid theme('colors.park.100');
+  border: 3px solid theme('colors.earth.100');
 }
 
 

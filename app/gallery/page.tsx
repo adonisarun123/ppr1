@@ -34,7 +34,7 @@ export default function GalleryPage() {
           {imgs.map((src, i) => (
             <div
               key={i}
-              className="aspect-square rounded-xl bg-cover bg-center ring-1 ring-park-200"
+              className="aspect-square rounded-xl bg-cover bg-center ring-1 ring-earth-200"
               style={{ backgroundImage: `url('${src}')` }}
             />
           ))}
