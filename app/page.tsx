@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { PawPrint, Sun, Moon, Map, Dog, Trees, Waves, UtensilsCrossed, ShieldCheck, Dumbbell } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import FadeIn from '@/components/animations/FadeIn'
+import FloatingPaws from '@/components/animations/FloatingPaws'
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1558944351-c7251825c27b?q=80&w=2069&auto=format&fit=crop')",
+              "url('https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=2400&auto=format&fit=crop')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: 'brightness(0.75)',
@@ -26,6 +27,7 @@ export default function HomePage() {
           className="absolute inset-0 bg-earth-900/35"
           aria-hidden="true"
         />
+        <FloatingPaws />
         <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 py-20 sm:py-28">
           <div className="mb-6 flex items-center gap-3 rounded-full bg-white/70 px-4 py-2 text-sm text-earth-900 ring-1 ring-earth-300 backdrop-blur">
             <Dog className="h-4 w-4" />
@@ -93,12 +95,42 @@ export default function HomePage() {
         <FadeIn>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: 'Sensory Garden', desc: 'Scientifically designed for enrichment.', icon: <Trees className="h-5 w-5 text-park-700" /> },
-              { title: 'Horse Riding', desc: 'Unique, premium experience for boarders.', icon: <ShieldCheck className="h-5 w-5 text-luxury-700" /> },
-              { title: 'Nature Trails', desc: 'Forest walks and meadows to explore.', icon: <Map className="h-5 w-5 text-sky-700" /> },
-              { title: 'Swimming Areas', desc: 'Dog-safe pools & water play.', icon: <Waves className="h-5 w-5 text-sky-600" /> },
-              { title: 'Training Grounds', desc: 'Agility and obedience facilities.', icon: <Dumbbell className="h-5 w-5 text-park-700" /> },
-              { title: 'Pet Café', desc: 'Treats for dogs, snacks for humans.', icon: <UtensilsCrossed className="h-5 w-5 text-sunshine-600" /> },
+              {
+                title: 'Sensory Garden',
+                desc: 'Scientifically designed for enrichment.',
+                icon: <Trees className="h-5 w-5 text-park-700" />,
+                img: "https://images.unsplash.com/photo-1561037404-61cd46aa615b?q=80&w=1400&auto=format&fit=crop",
+              },
+              {
+                title: 'Horse Riding',
+                desc: 'Unique, premium experience for boarders.',
+                icon: <ShieldCheck className="h-5 w-5 text-luxury-700" />,
+                img: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1400&auto=format&fit=crop",
+              },
+              {
+                title: 'Nature Trails',
+                desc: 'Forest walks and meadows to explore.',
+                icon: <Map className="h-5 w-5 text-sky-700" />,
+                img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1400&auto=format&fit=crop",
+              },
+              {
+                title: 'Swimming Areas',
+                desc: 'Dog-safe pools & water play.',
+                icon: <Waves className="h-5 w-5 text-sky-600" />,
+                img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1400&auto=format&fit=crop",
+              },
+              {
+                title: 'Training Grounds',
+                desc: 'Agility and obedience facilities.',
+                icon: <Dumbbell className="h-5 w-5 text-park-700" />,
+                img: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1400&auto=format&fit=crop",
+              },
+              {
+                title: 'Pet Café',
+                desc: 'Treats for dogs, snacks for humans.',
+                icon: <UtensilsCrossed className="h-5 w-5 text-sunshine-600" />,
+                img: "https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=1400&auto=format&fit=crop",
+              },
             ].map((a) => (
               <div key={a.title} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
                 <div className="flex items-center gap-3">
@@ -107,9 +139,9 @@ export default function HomePage() {
                 </div>
                 <p className="mt-2 text-slate-600">{a.desc}</p>
                 <div
-                  className="mt-4 h-40 w-full rounded-xl bg-cover bg-center ring-1 ring-park-100"
+                  className="mt-4 h-40 w-full rounded-xl bg-cover bg-center ring-1 ring-earth-100"
                   style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1200&auto=format&fit=crop')`,
+                    backgroundImage: `url('${a.img}')`,
                   }}
                 />
               </div>
