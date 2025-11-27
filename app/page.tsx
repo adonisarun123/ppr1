@@ -22,6 +22,10 @@ export default function HomePage() {
           }}
           aria-hidden="true"
         />
+        <div
+          className="absolute inset-0 bg-earth-900/35"
+          aria-hidden="true"
+        />
         <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 py-20 sm:py-28">
           <div className="mb-6 flex items-center gap-3 rounded-full bg-white/70 px-4 py-2 text-sm text-earth-900 ring-1 ring-earth-300 backdrop-blur">
             <Dog className="h-4 w-4" />
