@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { site } from '@/lib/site-config'
 import { Trees, Waves, UtensilsCrossed, ShieldCheck, Dumbbell, PawPrint } from 'lucide-react'
 import FadeIn from '@/components/animations/FadeIn'
+import { content } from '@/lib/content'
 
 export const metadata: Metadata = {
   title: 'Amenities',
@@ -23,7 +24,7 @@ export default function AmenitiesPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
       <h1 className="font-display text-4xl font-extrabold">Amenities</h1>
-      <p className="mt-3 text-slate-700">Everything your pet needs and more.</p>
+      <p className="mt-3 text-slate-700">{content.amenities.intro}</p>
       <FadeIn>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {amenities.map((a) => (
